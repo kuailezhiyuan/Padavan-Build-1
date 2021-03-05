@@ -25,10 +25,10 @@ sed -i "s/192.168.2/$lan_ip/g" $default_path/defaults.h
 # echo "打开5G无线桥接"
 # sed -i 's/{ "wl_mode_x", "0" }/{ "wl_mode_x", "4" }/g' $default_path/defaults.c
 
-echo "超频到 600MHz "
-sed -i '/CONFIG_FIRMWARE_CPU_600MHZ/d' $config
-echo "CONFIG_FIRMWARE_CPU_600MHZ=y" >> $config
+# echo "超频到 600MHz "
+# sed -i '/CONFIG_FIRMWARE_CPU_600MHZ/d' $config
+# echo "CONFIG_FIRMWARE_CPU_600MHZ=y" >> $config
 
-echo "集成 KMS 激活服务器"
-sed -i "s/CONFIG_FIRMWARE_INCLUDE_VLMCSD=n/CONFIG_FIRMWARE_INCLUDE_VLMCSD=y/g" $config
+# echo "集成 KMS 激活服务器"
+# sed -i "s/CONFIG_FIRMWARE_INCLUDE_VLMCSD=n/CONFIG_FIRMWARE_INCLUDE_VLMCSD=y/g" $config
 
